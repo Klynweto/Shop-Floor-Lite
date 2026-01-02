@@ -1,23 +1,26 @@
-# Manufacturing Mobile App
+# Shop Floor Lite – Offline-First Manufacturing App
 
 A robust, offline-first mobile application for manufacturing environments built with React Native and Expo.
 
-## Features
+## Project Status
+This repository contains the work completed within the given time constraints for the
+Shop Floor Lite mobile challenge. Due to limited time, only the portions implemented
+during the challenge window are included here.
 
-- **Authentication**: Role-based access (Operator/Supervisor)
-- **Dashboard**: Role-specific views with key metrics
-- **Downtime Capture**: Record and track equipment downtime
-- **Maintenance Checklist**: Complete maintenance tasks with checklists
-- **Alert Management**: Supervisors can review and acknowledge alerts
-- **Summary Reports**: View detailed reports and analytics
+## Intended Features
+- Authentication (mocked)
+- Role-based views (Operator / Supervisor)
+- Machine dashboard
+- Downtime capture flow
+- Maintenance checklist
+- Alert management
+- Summary view (KPIs)
 
-## Technical Features
-
-- **Offline-First**: Works seamlessly without internet connection
-- **Sync Visibility**: Clear indication of sync status
-- **Data Integrity**: Ensures data consistency across syncs
-- **State Management**: Zustand for efficient state management
-
+## Technical Approach
+- Offline-first data handling using local storage
+- Queued actions intended to sync when connectivity is restored
+- Unique identifiers planned for basic idempotency
+- Zustand used for state management
 ## Getting Started
 
 1. Install dependencies:
@@ -34,16 +37,4 @@ npm start
 ```bash
 npm run android
 ```
-
-## User Roles
-
-### Operator
-- Capture downtime events
-- Complete maintenance checklists
-- View personal dashboard
-
-### Supervisor
-- Review and acknowledge alerts
-- View comprehensive reports
-- Monitor operator activities
 
